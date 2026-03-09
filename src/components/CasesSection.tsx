@@ -254,8 +254,8 @@ const CasesSection = () => {
                               ))}
                                 </div>
 
-                        <div className={"casesPagination flex items-center justify-center gap-2 w-fit my-4 mx-auto rounded-full px-4 py-2"}>
-                          <div className={`casesPagination`}></div>
+                        <div className={"casesPagination text-primary flex items-center justify-center gap-2 w-fit my-4 mx-auto rounded-full px-4 py-2"}>
+                          <div className={`casesPagination text-primary`} ></div>
                         </div>
                         <div className=" mx-auto block flex items-center justify-center gap-2 w-fit">
                         <button className='cases-swiper-button-prev w-30px rounded-full border aspect-square bg-secondary p-1'>
