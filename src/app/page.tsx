@@ -7,6 +7,7 @@ import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import ServicesSection from "../components/ServicesSection";
 import TestimonialsSection from "../components/TestimonialsSection";
+import UpButton from "../components/UpButton";
 import "./globals.css";
 export default function Home() {
   const newLocal = "min-h-screen bg-background";
@@ -15,6 +16,7 @@ export default function Home() {
     <main className={newLocal}>
       <Navbar />
       <ComingSoon />
+      <UpButton />
       <HeroSection />
       <AboutSection />
       <ServicesSection />

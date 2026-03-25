@@ -6,6 +6,7 @@ import logo from "@/public/assets/logo-no-text.png";
 import Image from "next/image";
 
 const navLinks = [
+  // { label: "Home", href: "#" },
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Cases", href: "#cases" },

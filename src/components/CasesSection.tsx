@@ -221,7 +221,7 @@ const CasesSection = () => {
                             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
                               {cases.map((caseItem, i) => (  
-                                <SwiperSlide key={i}>
+                                <SwiperSlide key={i} className="swiper-case-slide">
                                 <motion.div
                                   key={i}
                                   initial={{ opacity: 0, y: 30 }}
@@ -258,10 +258,10 @@ const CasesSection = () => {
                           <div className={`casesPagination text-primary`} ></div>
                         </div>
                         <div className=" mx-auto block flex items-center justify-center gap-2 w-fit">
-                        <button className='cases-swiper-button-prev w-30px rounded-full border aspect-square bg-secondary p-1'>
+                        <button className='cases-swiper-button-prev slide-button w-30px h-30px rounded-full border bg-secondary p-1'>
                             <FontAwesomeIcon icon={faChevronLeft} />
                         </button>
-                        <button className='cases-swiper-button-next w-30px rounded-full border aspect-square bg-secondary p-1'>
+                        <button className='cases-swiper-button-next slide-button w-30px h-30px rounded-full border bg-secondary p-1'>
                             <FontAwesomeIcon icon={faChevronRight} />
                         </button>
                         </div>

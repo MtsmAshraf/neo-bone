@@ -100,3 +100,19 @@
 ::-webkit-scrollbar-thumb{
   background-color: hsl(var(--primary));
 }
+::selection{
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+.casesPagination span{
+  background-color: hsl(var(--primary));
+}
+.slide-button{
+  transition: background-color 0.3s ease;
+  aspect-ratio: 1/1;
+  width: 30px;
+}
+.slide-button:hover{
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}

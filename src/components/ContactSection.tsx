@@ -30,7 +30,7 @@ const contactItems = [
   {
     icon: MapPin,
     label: "Location",
-    value: "123 Medical District, Suite 400",
+    value: "10th of Ramadan City, Egypt",
     href: "#",
   },
 ];
@@ -75,10 +75,12 @@ const ContactSection = () => {
                 <item.icon className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <p className="text-xs text-muted-foreground font-medium uppercase tracking-wide">
+                <p className="text-xs text-muted-foreground font-medium uppercase tracking-wide ">
                   {item.label}
                 </p>
-                <p className="text-sm font-medium text-foreground">{item.value}</p>
+                <p className="text-sm font-medium text-foreground underline md:no-underline sm:decoration-1">
+                  {item.value}
+                </p>
               </div>
             </motion.a>
           ))}
