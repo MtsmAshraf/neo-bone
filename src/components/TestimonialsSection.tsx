@@ -4,12 +4,12 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "One of the best companies in Egyptian and middle east market 👌 keep it up with my best wishes 👏",
+    quote: "Perfect",
     // author: "Dr. Ahmed Al-Rashid",
     // role: "Maxillofacial Surgeon",
   },
   {
-    quote: "Perfect",
+    quote: "One of the best companies in Egyptian and middle east market 👌 keep it up with my best wishes 👏",
     // author: "Dr. Sarah Mitchell",
     // role: "Head of Reconstructive Surgery",
   },
