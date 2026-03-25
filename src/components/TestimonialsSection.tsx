@@ -4,19 +4,19 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Neobone's custom implants have transformed the outcomes we achieve in complex mandibular reconstruction cases. The precision is unmatched.",
-    author: "Dr. Ahmed Al-Rashid",
-    role: "Maxillofacial Surgeon",
+    quote: "One of the best companies in Egyptian and middle east market 👌 keep it up with my best wishes 👏",
+    // author: "Dr. Ahmed Al-Rashid",
+    // role: "Maxillofacial Surgeon",
   },
   {
-    quote: "The 3D surgical planning service saved us hours in the OR and gave our patient a significantly better result. Truly a game-changer.",
-    author: "Dr. Sarah Mitchell",
-    role: "Head of Reconstructive Surgery",
+    quote: "Perfect",
+    // author: "Dr. Sarah Mitchell",
+    // role: "Head of Reconstructive Surgery",
   },
   {
-    quote: "Working with Neobone feels like having an engineering team dedicated to our patients. Their attention to anatomical detail is remarkable.",
-    author: "Dr. Carlos Mendes",
-    role: "Craniofacial Specialist",
+    quote: "Good Job",
+    // author: "Dr. Carlos Mendes",
+    // role: "Craniofacial Specialist",
   },
 ];
 
@@ -35,14 +35,14 @@ const TestimonialsSection = () => {
             Testimonials
           </span>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-            Trusted by Surgeons Worldwide
+            Trusted Everywhere
           </h2>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((t, i) => (
             <motion.div
-              key={t.author}
+              key={i}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -51,13 +51,13 @@ const TestimonialsSection = () => {
               style={{ boxShadow: "var(--card-shadow)" }}
             >
               <Quote className="w-8 h-8 text-primary/20 mb-4" />
-              <p className="text-foreground leading-relaxed mb-6 text-sm italic">
+              <p className="text-foreground leading-relaxed mb-6 text-sm italic text-center">
                 "{t.quote}"
               </p>
-              <div>
-                <p className="font-semibold text-foreground text-sm">{t.author}</p>
-                <p className="text-xs text-muted-foreground">{t.role}</p>
-              </div>
+              {/* <div> */}
+                {/* <p className="font-semibold text-foreground text-sm">{t.author}</p> */}
+                {/* <p className="text-xs text-muted-foreground">{t.role}</p> */}
+              {/* </div> */}
             </motion.div>
           ))}
         </div>
