@@ -5,17 +5,17 @@ import { Quote } from "lucide-react";
 const testimonials = [
   {
     quote: "Perfect",
-    // author: "Dr. Ahmed Al-Rashid",
+    author: "Dr. Adel Sallam",
     // role: "Maxillofacial Surgeon",
   },
   {
     quote: "One of the best companies in Egyptian and middle east market 👌 keep it up with my best wishes 👏",
-    // author: "Dr. Sarah Mitchell",
+    author: "Dr. Mohamed Adel Eloraby",
     // role: "Head of Reconstructive Surgery",
   },
   {
     quote: "Good Job",
-    // author: "Dr. Carlos Mendes",
+    author: "Abdelnaser Elsawy",
     // role: "Craniofacial Specialist",
   },
 ];
@@ -47,17 +47,17 @@ const TestimonialsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="bg-card border border-border rounded-2xl p-8 relative"
+              className="bg-card border border-border rounded-2xl p-8 relative h-fit"
               style={{ boxShadow: "var(--card-shadow)" }}
             >
               <Quote className="w-8 h-8 text-primary/20 mb-4" />
-              <p className="text-foreground leading-relaxed mb-6 text-sm italic text-center">
+              <p className="text-foreground leading-relaxed mb-6 text-md italic text-center">
                 "{t.quote}"
               </p>
-              {/* <div> */}
-                {/* <p className="font-semibold text-foreground text-sm">{t.author}</p> */}
+              <div>
+                <p className="font-semibold text-center text-foreground text-sm">{t.author}</p>
                 {/* <p className="text-xs text-muted-foreground">{t.role}</p> */}
-              {/* </div> */}
+              </div>
             </motion.div>
           ))}
         </div>

@@ -1,22 +1,22 @@
 "use client"
 import { motion } from "framer-motion";
-import { Shield, Target, HeartPulse } from "lucide-react";
+import { Workflow, Factory, ShieldCheck } from "lucide-react";
 
 const values = [
   {
-    icon: Shield,
+    icon: ShieldCheck,
     title: "Medical-Grade Quality",
-    description: "Every prosthetic meets the highest biocompatibility and safety standards.",
+    description: "Every appliance we produce meets the highest medical standards — using certified, biocompatible materials that are safe, durable, and built to perform where it matters most.",
   },
   {
-    icon: Target,
-    title: "Patient-Specific Design",
-    description: "Custom-engineered solutions tailored to each patient's unique anatomy.",
+    icon: Workflow,
+    title: "Complete in-house process",
+    description: "From design to delivery, every step is handled under one roof — ensuring consistent quality, faster turnaround, and full control over every detail.",
   },
   {
-    icon: HeartPulse,
-    title: "Restoring Lives",
-    description: "Helping surgeons deliver life-changing outcomes for their patients.",
+    icon: Factory,
+    title: "Specialized factory",
+    description: "Our facility is purpose-built for oral and maxillofacial appliances, equipped with the latest technology and operated by specialists who understand the precision this field demands.",
   },
 ];
 

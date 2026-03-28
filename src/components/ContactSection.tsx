@@ -85,6 +85,9 @@ const ContactSection = () => {
             </motion.a>
           ))}
         </div>
+          <div className="mt-4 w-full flex justify-center items-center">
+            <iframe className=" bg-white p-2 w-full lg:w-3/4 aspect-square md:aspect-[2/1] rounded-3xl shadow-lg" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d215.25261618573344!2d31.743371437078032!3d30.321327172890246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1774545000202!5m2!1sen!2seg" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+          </div>
       </div>
     </section>
   );

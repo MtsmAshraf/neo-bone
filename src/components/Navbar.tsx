@@ -2,14 +2,15 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "@/public/assets/logo-no-text.png";
+import logo from "@/public/assets/logo.png";
 import Image from "next/image";
 
 const navLinks = [
   // { label: "Home", href: "#" },
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Cases", href: "#cases" },
+  // { label: "Cases", href: "#cases" },
+  { label: "Products", href: "#products" },
   { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
 ];

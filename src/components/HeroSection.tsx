@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import heroBg from "@/public/assets/hero-bg.jpg";
 import Image from "next/image";
-import logo from "@/public/assets/logo-no-text.png";
 
 const HeroSection = () => {
   return (
@@ -25,22 +24,22 @@ const HeroSection = () => {
             </span>
           </motion.div>
 
-          <motion.h1
+          {/* <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
             className="text-5xl md:text-9xl font-display text-foreground leading-tight mb-6"
           >
             Neo Bone
-          </motion.h1>
-          {/* <motion.img
+          </motion.h1> */}
+          <motion.img
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
-            src={"./assets/logo-no-text.png"}
+            src={"./assets/logo.png"}
             alt="Neobone Logo"
-            className="inline-block mr-2 my-2 h-20 w-auto"
-          /> */}
+            className="inline-block mr-2 my-2 h-20 w-auto object-contain"
+          />
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
