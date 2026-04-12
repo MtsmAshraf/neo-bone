@@ -34,7 +34,7 @@ export default function WhatsAppButton({
     };
   }, []);
 
-  const handleOpen = (e) => {
+  const handleOpen = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation();
     setIsOpen((prev) => !prev);
     setPulse(false);
