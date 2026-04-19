@@ -4,20 +4,25 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Perfect",
-    author: "Dr. Adel Sallam",
-    // role: "Maxillofacial Surgeon",
+    quote: "Recommend NeoBone for any subperiosteal implant. Better solution and amazing result in server atrophic jaw",
+    author: "Dr. Peter Barakat",
+    role: "Consultant of Maxillofacial Surgry",
   },
   {
-    quote: "One of the best companies in Egyptian and middle east market 👌 keep it up with my best wishes 👏",
+    quote: "One of the best companies in Egyptian and middle east market keep it up with my best wishes",
     author: "Dr. Mohamed Adel Eloraby",
-    // role: "Head of Reconstructive Surgery",
+    role: "Prosthetic specialist & Head of marketing department at EG Medical",
   },
   {
-    quote: "Good Job",
-    author: "Abdelnaser Elsawy",
-    // role: "Craniofacial Specialist",
+    quote: "I had a pleasant experience with neo bone , they're very professional with really good technical support",
+    author: "Ahmed Abo El Nasr",
+    role: "Implant and prosthetic specialist",
   },
+  {
+    quote: "I dealt with Dr. Mohamed Issawi, and honestly, mashallah, they are outstanding doctors. May God grant them even more and more success.",
+    author: "Dr. Mohamed Ashraf",
+    role: "Implant and prosthetic specialist",
+  }
 ];
 
 const TestimonialsSection = () => {
@@ -39,7 +44,7 @@ const TestimonialsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 justify-center">
           {testimonials.map((t, i) => (
             <motion.div
               key={i}
@@ -56,7 +61,7 @@ const TestimonialsSection = () => {
               </p>
               <div>
                 <p className="font-semibold text-center text-foreground text-sm">{t.author}</p>
-                {/* <p className="text-xs text-muted-foreground">{t.role}</p> */}
+                <p className="text-xs text-center text-muted-foreground">{t.role}</p>
               </div>
             </motion.div>
           ))}

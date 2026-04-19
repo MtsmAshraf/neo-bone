@@ -5,74 +5,88 @@ import services2 from "@/public/assets/bone haresting  guide.png";
 import services3 from "@/public/assets/prothestic support .jpg";
 import services4 from "@/public/assets/screws set and screws .png";
 import services5 from "@/public/assets/untitled.png";
+import services6 from "@/public/assets/quad zygoma guide .png";
 import Image from "next/image";
 import { useState } from "react";
 import { X } from "lucide-react";
 
 const services = [
   {
-    title: "Service Name",
+    title: "PSI",
     description: "Patient-specific mandibular and maxillary implants engineered from CT/CBCT data for perfect anatomical fit.",
     image: services1,
     details: "Extended details about this service go here. You can add more information, features, materials used, turnaround time, etc.",
     slider: [
-      services1,
-      services1,
-      services1,
-      services1,
-      services1,
+      // services1,
+      // services1,
+      // services1,
+      // services1,
+      // services1,
     ]
   },
   {
-    title: "Service Name",
+    title: "Surgical Guides",
     description: "Accurate bone replicas for pre-surgical planning, allowing surgeons to rehearse complex procedures.",
     image: services2,
     details: "Extended details about this service go here. You can add more information, features, materials used, turnaround time, etc.",
     slider: [
-      services2,
-      services2,
-      services2,
-      services2,
-      services2,
+      // services2,
+      // services2,
+      // services2,
+      // services2,
+      // services2,
     ]
   },
   {
-    title: "Service Name",
+    title: "Prothestic Support",
     description: "Advanced CAD/CAM workflows to design, simulate, and optimize surgical outcomes before the operating room.",
     image: services3,
     details: "Extended details about this service go here. You can add more information, features, materials used, turnaround time, etc.",
     slider: [
-      services3,
-      services3,
-      services3,
-      services3,
-      services3,
+      // services3,
+      // services3,
+      // services3,
+      // services3,
+      // services3,
     ]
   },
   {
-    title: "Service Name",
+    title: "Bone Fixation Accessiors",
     description: "Custom-designed facial bone prosthetics for trauma, oncology, and congenital reconstruction cases.",
     image: services4,
     details: "Extended details about this service go here. You can add more information, features, materials used, turnaround time, etc.",
     slider: [
-      services4,
-      services4,
-      services4,
-      services4,
-      services4,
+      // services4,
+      // services4,
+      // services4,
+      // services4,
+      // services4,
     ]
   },
   {
-    title: "Service Name",
+    title: "Orthognatic",
     description: "Custom-designed facial bone prosthetics for trauma, oncology, and congenital reconstruction cases.",
     image: services5,
     details: "Extended details about this service go here. You can add more information, features, materials used, turnaround time, etc.",
     slider: [
-      services5,
-      services5,
-      services5,
-      services5,
-      services5,
+      // services5,
+      // services5,
+      // services5,
+      // services5,
+      // services5,
+    ]
+  },
+  {
+    title: "Zygoma Guides",
+    description: "Custom-designed facial bone prosthetics for trauma, oncology, and congenital reconstruction cases.",
+    image: services6,
+    details: "Extended details about this service go here. You can add more information, features, materials used, turnaround time, etc.",
+    slider: [
+      // services5,
+      // services5,
+      // services5,
+      // services5,
+      // services5,
     ]
   }
 ];
@@ -125,7 +139,7 @@ const ServiceModal = ({ service, onClose }: { service: Service; onClose: () => v
 
           {/* Content */}
           <div className="p-6">
-            <h3 className="text-2xl font-bold font-display text-foreground mb-3">
+            <h3 className="text-2xl font-bold text-foreground mb-3">
               {service.title}
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
@@ -137,7 +151,7 @@ const ServiceModal = ({ service, onClose }: { service: Service; onClose: () => v
             </p>
             {
               (service.slider && service.slider.length > 0) && 
-              <ul className="grid grid-cols-3 gap-4 mt-2">
+              <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-2">
                 {service.slider.map((img, idx) => (
                   <li key={idx} className="text-sm text-muted-foreground">
                     <Image src={img} alt={`Detail ${idx + 1}`} className="w-full h-full object-cover" />
@@ -203,7 +217,7 @@ const ServicesSection = () => {
 
               {/* Text */}
               <div className="absolute bottom-0 left-0 right-0 p-5">
-                <h3 className="text-lg font-semibold font-sans text-white mb-1">
+                <h3 className="text-lg font-semibold text-white mb-1">
                   {service.title}
                 </h3>
                 <p className="text-sm text-white/70 group-hover:text-white leading-relaxed transition duration-300 line-clamp-2">
