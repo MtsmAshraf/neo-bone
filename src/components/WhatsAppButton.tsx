@@ -14,7 +14,7 @@ const CloseIcon = () => (
 );
 
 export default function WhatsAppButton({
-  phoneNumber = "201000000000", // Egyptian number format
+  phoneNumber = "20109343430", // Egyptian number format
   message = "Hello! I'd like to get in touch.",
   position = "bottom-right",
 }) {

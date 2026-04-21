@@ -18,8 +18,8 @@ const contactItems = [
   {
     icon: Mail,
     label: "Email",
-    value: "info@neobone.com",
-    href: "mailto:info@neobone.com",
+    value: "info@neo-bone.com",
+    href: "mailto:info@neo-bone.com",
   },
   {
     icon: Facebook,

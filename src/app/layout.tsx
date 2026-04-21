@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://neo-bone.com/assets/logo.png", // 
+        url: "https://neo-bone.com/assets/logo.png", 
         width: 1200,
         height: 630,
         alt: "Neo Bone — Advanced Oral & Maxillofacial Implant Solutions",
