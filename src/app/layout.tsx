@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import icon from "./favicon.ico";
 
 export const metadata: Metadata = {
   title: "Neo Bone | Advanced Oral & Maxillofacial Implant Solutions",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     "زرعات متقدمة",
     "نيو بون",
   ],
-
+  icons: icon.src,
   // Open Graph — controls the preview card on Facebook, WhatsApp, LinkedIn, Telegram, etc.
   openGraph: {
     title: "Neo Bone | Advanced Oral & Maxillofacial Implant Solutions",
