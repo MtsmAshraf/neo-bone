@@ -46,7 +46,9 @@ export const metadata: Metadata = {
     "زرعات متقدمة",
     "نيو بون",
   ],
-  icons: icon.src,
+  icons: {
+  icon: "/favicon.ico",
+},
   // Open Graph — controls the preview card on Facebook, WhatsApp, LinkedIn, Telegram, etc.
   openGraph: {
     title: "Neo Bone | Advanced Oral & Maxillofacial Implant Solutions",
