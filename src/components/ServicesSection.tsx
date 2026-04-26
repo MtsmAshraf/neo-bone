@@ -2,7 +2,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import services1 from "@/public/assets/Gemini_Generated_Image_9xuj9t9xuj9t9xuj.png";
 import services2 from "@/public/assets/bone haresting  guide.png";
-import services3 from "@/public/assets/prothestic support .jpg";
+import services3 from "@/public/assets/prothestic support .png";
 import services4 from "@/public/assets/screws set and screws .png";
 import services5 from "@/public/assets/untitled.png";
 import services6 from "@/public/assets/quad zygoma guide .png";
@@ -13,9 +13,9 @@ import { X } from "lucide-react";
 const services = [
   {
     title: "PSI",
-    description: "Patient-specific mandibular and maxillary implants engineered from CT/CBCT data for perfect anatomical fit.",
+    description: "Patient-specific mandibular and maxillary implants engineered from CT data for perfect anatomical fit.",
     image: services1,
-    details: "Extended details about this service go here. You can add more information, features, materials used, turnaround time, etc.",
+    details: "engineered driven design following the equal stress and strain of the device., seprate MUA design for more prothestic options ., minimum and equal thickness for best tissue response ., highly polished outer surface , sandblasted with double acid etching inner surface,. equal and balanced distribution.",
     slider: [
       // services1,
       // services1,
@@ -28,7 +28,7 @@ const services = [
     title: "Surgical Guides",
     description: "Accurate bone replicas for pre-surgical planning, allowing surgeons to rehearse complex procedures.",
     image: services2,
-    details: "Extended details about this service go here. You can add more information, features, materials used, turnaround time, etc.",
+    details: "bone supported guides ., tissue supported guides ., sleeveless guides ., stckable guides , resection guides",
     slider: [
       // services2,
       // services2,
@@ -39,9 +39,9 @@ const services = [
   },
   {
     title: "Prothestic Support",
-    description: "Advanced CAD/CAM workflows to design, simulate, and optimize surgical outcomes before the operating room.",
+    description: "Advanced CAD/CAM workflows to provied best result prothestic rehablitaion espesially for ALL on X cases.",
     image: services3,
-    details: "Extended details about this service go here. You can add more information, features, materials used, turnaround time, etc.",
+    details: "hyprid zirconium over bar ., hyprid zirconium over toronto bridge.,hyprid 3d printed resin over titunium bar  ",
     slider: [
       // services3,
       // services3,
@@ -54,7 +54,7 @@ const services = [
     title: "Bone Fixation Accessiors",
     description: "Custom-designed facial bone prosthetics for trauma, oncology, and congenital reconstruction cases.",
     image: services4,
-    details: "Extended details about this service go here. You can add more information, features, materials used, turnaround time, etc.",
+    details: "bone mini screws ., bone emergency screws , bone reconstruction screws , bone micro screws, bone drills , transbuccal trockr , bone driver.",
     slider: [
       // services4,
       // services4,
@@ -64,10 +64,10 @@ const services = [
     ]
   },
   {
-    title: "Orthognatic",
-    description: "Custom-designed facial bone prosthetics for trauma, oncology, and congenital reconstruction cases.",
+    title: "Orthognathic",
+    description: "Orthognathic and custom wafer design , simulation for accurate maxillary and mandibular movement.",
     image: services5,
-    details: "Extended details about this service go here. You can add more information, features, materials used, turnaround time, etc.",
+    details: "Custom wafer design and printing., Custom made Osteotomy guides., Custom made fixation plates for accurate and favorable reposition.",
     slider: [
       // services5,
       // services5,
@@ -78,9 +78,9 @@ const services = [
   },
   {
     title: "Zygoma Guides",
-    description: "Custom-designed facial bone prosthetics for trauma, oncology, and congenital reconstruction cases.",
+    description: "Especially made zygoma guide for accurate zygomatic placement without fear of biological tissues injury.",
     image: services6,
-    details: "Extended details about this service go here. You can add more information, features, materials used, turnaround time, etc.",
+    details: "Metal 3d printed guide for Stable positioning., Custom made Lower level sleeve for accurate ridge entry., Custom made upper level sleeve for accurate zygomatic entery., Fixation screws for stable drilling., Implant placement through guide.",
     slider: [
       // services5,
       // services5,
@@ -146,9 +146,12 @@ const ServiceModal = ({ service, onClose }: { service: Service; onClose: () => v
               {service.description}
             </p>
             <hr className="border-border mb-4" />
-            <p className="text-muted-foreground leading-relaxed">
-              {service.details}
-            </p>
+            
+            <ul className="text-muted-foreground leading-relaxed list-disc list-inside space-y-1">
+              {service.details.split(",").map((item, i) => (
+                <li key={i}>{item.trim()}</li>
+              ))}
+            </ul>
             {
               (service.slider && service.slider.length > 0) && 
               <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-2">

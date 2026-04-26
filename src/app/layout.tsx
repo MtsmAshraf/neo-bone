@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     "نيو بون",
   ],
   icons: {
-  icon: "/favicon.ico",
+  icon: icon.src,
 },
   // Open Graph — controls the preview card on Facebook, WhatsApp, LinkedIn, Telegram, etc.
   openGraph: {
