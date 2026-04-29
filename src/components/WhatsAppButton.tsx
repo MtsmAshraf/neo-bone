@@ -55,8 +55,8 @@ export default function WhatsAppButton({
       <div
         className={`transition-all duration-300 ease-out origin-bottom-left
           ${isOpen
-            ? "opacity-100 scale-100 translate-y-0 pointer-events-auto w-auto"
-            : "opacity-0 scale-90 translate-y-4 pointer-events-none w-0"
+            ? "opacity-100 scale-100 translate-y-0 pointer-events-auto w-auto overflow-visible"
+            : "opacity-0 scale-90 translate-y-4 pointer-events-none w-0 overflow-hidden"
           }`}
       >
         <div className="bg-white rounded-2xl shadow-2xl w-72 overflow-hidden border border-gray-100">
